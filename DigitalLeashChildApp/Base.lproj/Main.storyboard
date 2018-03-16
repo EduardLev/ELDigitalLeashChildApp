@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-MediumItalic</string>
+        </array>
+        <array key="PlaytimeOblique.ttf">
+            <string>PlaytimeWithHotToddiesOblique</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99F-6i-dm2">
+                                <rect key="frame" x="40" y="123.99999999999999" width="61" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" name="PlaytimeWithHotToddiesOblique" family="PlaytimeWithHotToddiesOblique" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dsm-w8-TxU">
+                                <rect key="frame" x="40" y="148.66666666666666" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.56862745098039214" green="0.72941176470588232" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="e0J-Hv-ArJ"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvN-Uv-hrS">
+                                <rect key="frame" x="77.666666666666686" y="388.66666666666669" width="220" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="0qc-4D-vek"/>
+                                    <constraint firstAttribute="height" constant="40" id="8LV-nH-l6A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaytimeWithHotToddiesOblique" family="PlaytimeWithHotToddiesOblique" pointSize="20"/>
+                                <state key="normal" title="REPORT LOCATION">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reportLocationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMJ-2i-EHI"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBg-9J-sNH">
+                                <rect key="frame" x="0.0" y="44" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqb-vf-CI3">
+                                        <rect key="frame" x="173.33333333333334" y="34" width="28.333333333333343" height="12.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="PlaytimeWithHotToddiesOblique" family="PlaytimeWithHotToddiesOblique" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uqb-vf-CI3" firstAttribute="centerY" secondItem="pBg-9J-sNH" secondAttribute="centerY" id="5xS-7o-RdD"/>
+                                    <constraint firstItem="uqb-vf-CI3" firstAttribute="centerX" secondItem="pBg-9J-sNH" secondAttribute="centerX" id="fy1-4z-ZsI"/>
+                                    <constraint firstAttribute="height" constant="80" id="o4l-3o-mJt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RvN-Uv-hrS" firstAttribute="top" secondItem="dsm-w8-TxU" secondAttribute="bottom" constant="200" id="00P-SA-eCj">
+                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="dsm-w8-TxU" firstAttribute="top" secondItem="99F-6i-dm2" secondAttribute="bottom" constant="10" id="HkD-Wn-zsO"/>
+                            <constraint firstItem="99F-6i-dm2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WMt-Oa-FZF"/>
+                            <constraint firstItem="dsm-w8-TxU" firstAttribute="leading" secondItem="99F-6i-dm2" secondAttribute="leading" id="XEb-BU-kaU"/>
+                            <constraint firstItem="99F-6i-dm2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="fuV-VP-JS1"/>
+                            <constraint firstItem="dsm-w8-TxU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="hNu-J4-tNf"/>
+                            <constraint firstItem="pBg-9J-sNH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ltj-Fy-rTk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pBg-9J-sNH" secondAttribute="trailing" id="muI-Nj-C7q"/>
+                            <constraint firstItem="RvN-Uv-hrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nu5-5L-j4b"/>
+                            <constraint firstItem="pBg-9J-sNH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tG5-D9-vvK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="uqb-vf-CI3" id="N5I-5a-J5S"/>
+                        <outlet property="errorView" destination="pBg-9J-sNH" id="lNz-mG-wOb"/>
+                        <outlet property="reportLocationButton" destination="RvN-Uv-hrS" id="sRn-Ax-XfW"/>
+                        <outlet property="usernameTextField" destination="dsm-w8-TxU" id="exD-X2-vJe"/>
+                        <segue destination="xh7-o8-nfQ" kind="show" identifier="reportLocation" id="Ouq-va-5U4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iL1-PU-RFZ">
+            <objects>
+                <viewController id="xh7-o8-nfQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wlf-Yp-oiI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRH-Rc-2Mr">
+                                <rect key="frame" x="77.666666666666686" y="388.66666666666669" width="220" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j17-x9-bOw"/>
+                                    <constraint firstAttribute="width" constant="220" id="wKx-DJ-XM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaytimeWithHotToddiesOblique" family="PlaytimeWithHotToddiesOblique" pointSize="20"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6lr-PJ-hyE" kind="unwind" unwindAction="unwindForSegue:towardsViewController:" id="FKi-1n-5Ad"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location is now being reported!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSn-wY-fj6">
+                                <rect key="frame" x="72.666666666666686" y="204" width="230" height="62.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="LvA-57-BwL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.70588235294117641" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wRH-Rc-2Mr" firstAttribute="top" secondItem="v6B-zu-mXR" secondAttribute="top" constant="344.5" id="OYp-1c-Tb7">
+                                <variation key="heightClass=compact-widthClass=compact" constant="244.5"/>
+                            </constraint>
+                            <constraint firstItem="iSn-wY-fj6" firstAttribute="centerX" secondItem="wlf-Yp-oiI" secondAttribute="centerX" id="ZId-qp-xML"/>
+                            <constraint firstItem="iSn-wY-fj6" firstAttribute="top" secondItem="v6B-zu-mXR" secondAttribute="top" constant="160" id="hCO-yS-5ut"/>
+                            <constraint firstItem="wRH-Rc-2Mr" firstAttribute="centerX" secondItem="wlf-Yp-oiI" secondAttribute="centerX" id="keP-gy-0nj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v6B-zu-mXR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Moi-Ev-aVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6lr-PJ-hyE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
